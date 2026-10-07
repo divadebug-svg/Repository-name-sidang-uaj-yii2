@@ -1,0 +1,1 @@
+<?php use yii\helpers\Html; use yii\widgets\ActiveForm; $this->title='Tambah Dosen'; ?><div class="card form-card"><h2>👨‍🏫 Tambah Dosen</h2><?php $f=ActiveForm::begin(); echo $f->field($model,'nama')->textInput(['placeholder'=>'Nama Dosen']); echo Html::submitButton('Simpan',['class'=>'btn dark']); ActiveForm::end(); ?></div>

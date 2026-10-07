@@ -1,0 +1,752 @@
+2026-10-07 01:01:33 [::1][-][-][error][yii\base\InvalidArgumentException] yii\base\InvalidArgumentException: The file or directory to be published does not exist: C:\xampp\htdocs\sidang-uaj-yii2\vendor\bower/jquery/dist in C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\web\AssetManager.php:485
+Stack trace:
+#0 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\web\AssetBundle.php(188): yii\web\AssetManager->publish('C:\\xampp\\htdocs...', Array)
+#1 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\web\AssetManager.php(303): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\web\AssetManager.php(274): yii\web\AssetManager->loadBundle('yii\\web\\JqueryA...', Array, true)
+#3 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\web\View.php(318): yii\web\AssetManager->getBundle('yii\\web\\JqueryA...')
+#4 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\web\View.php(323): yii\web\View->registerAssetBundle('yii\\web\\JqueryA...', NULL)
+#5 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\web\View.php(323): yii\web\View->registerAssetBundle('yii\\web\\YiiAsse...', NULL)
+#6 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\web\AssetBundle.php(130): yii\web\View->registerAssetBundle('yii\\validators\\...')
+#7 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\validators\RequiredValidator.php(94): yii\web\AssetBundle::register(Object(yii\web\View))
+#8 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\widgets\ActiveField.php(835): yii\validators\RequiredValidator->clientValidateAttribute(Object(app\models\Mahasiswa), 'nim', Object(yii\web\View))
+#9 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\widgets\ActiveField.php(235): yii\widgets\ActiveField->getClientOptions()
+#10 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\widgets\ActiveField.php(225): yii\widgets\ActiveField->begin()
+#11 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\widgets\ActiveField.php(176): yii\widgets\ActiveField->render()
+#12 C:\xampp\htdocs\sidang-uaj-yii2\views\mahasiswa\form.php(1): yii\widgets\ActiveField->__toString()
+#13 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\base\View.php(345): require('C:\\xampp\\htdocs...')
+#14 [internal function]: yii\base\View->yii\base\{closure}('C:\\xampp\\htdocs...', Array)
+#15 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\base\View.php(350): call_user_func_array(Object(Closure), Array)
+#16 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#17 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\MahasiswaController))
+#18 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\base\Controller.php(423): yii\base\View->render('form', Array, Object(app\controllers\MahasiswaController))
+#19 C:\xampp\htdocs\sidang-uaj-yii2\controllers\MahasiswaController.php(2): yii\base\Controller->render('form', Array)
+#20 [internal function]: app\controllers\MahasiswaController->actionCreate()
+#21 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\base\InlineAction.php(60): call_user_func_array(Array, Array)
+#22 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\base\Controller.php(182): yii\base\InlineAction->runWithParams(Array)
+#23 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\base\Module.php(547): yii\base\Controller->runAction('create', Array)
+#24 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\web\Application.php(105): yii\base\Module->runAction('mahasiswa/creat...', Array)
+#25 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\base\Application.php(382): yii\web\Application->handleRequest(Object(yii\web\Request))
+#26 C:\xampp\htdocs\sidang-uaj-yii2\web\index.php(7): yii\base\Application->run()
+#27 {main}
+2026-10-07 01:01:33 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\sidang-uaj-yii2\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '56121'
+    'SERVER_SOFTWARE' => 'PHP 8.2.12 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/mahasiswa/create'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\sidang-uaj-yii2\\web\\index.php'
+    'PATH_INFO' => '/mahasiswa/create'
+    'PHP_SELF' => '/index.php/mahasiswa/create'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"154\", \"Microsoft Edge\";v=\"154\", \"Not A(Brand\";v=\"99\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:8080/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'REQUEST_TIME_FLOAT' => 1791327693.402
+    'REQUEST_TIME' => 1791327693
+]
+2026-10-07 01:02:51 [::1][-][-][error][yii\base\InvalidArgumentException] yii\base\InvalidArgumentException: The file or directory to be published does not exist: C:\xampp\htdocs\sidang-uaj-yii2\vendor\bower/jquery/dist in C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\web\AssetManager.php:485
+Stack trace:
+#0 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\web\AssetBundle.php(188): yii\web\AssetManager->publish('C:\\xampp\\htdocs...', Array)
+#1 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\web\AssetManager.php(303): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\web\AssetManager.php(274): yii\web\AssetManager->loadBundle('yii\\web\\JqueryA...', Array, true)
+#3 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\web\View.php(318): yii\web\AssetManager->getBundle('yii\\web\\JqueryA...')
+#4 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\web\View.php(323): yii\web\View->registerAssetBundle('yii\\web\\JqueryA...', NULL)
+#5 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\web\View.php(323): yii\web\View->registerAssetBundle('yii\\web\\YiiAsse...', NULL)
+#6 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\web\AssetBundle.php(130): yii\web\View->registerAssetBundle('yii\\validators\\...')
+#7 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\validators\RequiredValidator.php(94): yii\web\AssetBundle::register(Object(yii\web\View))
+#8 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\widgets\ActiveField.php(835): yii\validators\RequiredValidator->clientValidateAttribute(Object(app\models\Dosen), 'nama', Object(yii\web\View))
+#9 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\widgets\ActiveField.php(235): yii\widgets\ActiveField->getClientOptions()
+#10 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\widgets\ActiveField.php(225): yii\widgets\ActiveField->begin()
+#11 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\widgets\ActiveField.php(176): yii\widgets\ActiveField->render()
+#12 C:\xampp\htdocs\sidang-uaj-yii2\views\dosen\form.php(1): yii\widgets\ActiveField->__toString()
+#13 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\base\View.php(345): require('C:\\xampp\\htdocs...')
+#14 [internal function]: yii\base\View->yii\base\{closure}('C:\\xampp\\htdocs...', Array)
+#15 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\base\View.php(350): call_user_func_array(Object(Closure), Array)
+#16 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#17 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\DosenController))
+#18 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\base\Controller.php(423): yii\base\View->render('form', Array, Object(app\controllers\DosenController))
+#19 C:\xampp\htdocs\sidang-uaj-yii2\controllers\DosenController.php(2): yii\base\Controller->render('form', Array)
+#20 [internal function]: app\controllers\DosenController->actionCreate()
+#21 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\base\InlineAction.php(60): call_user_func_array(Array, Array)
+#22 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\base\Controller.php(182): yii\base\InlineAction->runWithParams(Array)
+#23 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\base\Module.php(547): yii\base\Controller->runAction('create', Array)
+#24 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\web\Application.php(105): yii\base\Module->runAction('dosen/create', Array)
+#25 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\base\Application.php(382): yii\web\Application->handleRequest(Object(yii\web\Request))
+#26 C:\xampp\htdocs\sidang-uaj-yii2\web\index.php(7): yii\base\Application->run()
+#27 {main}
+2026-10-07 01:02:51 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\sidang-uaj-yii2\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '54762'
+    'SERVER_SOFTWARE' => 'PHP 8.2.12 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/dosen/create'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\sidang-uaj-yii2\\web\\index.php'
+    'PATH_INFO' => '/dosen/create'
+    'PHP_SELF' => '/index.php/dosen/create'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"154\", \"Microsoft Edge\";v=\"154\", \"Not A(Brand\";v=\"99\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:8080/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'REQUEST_TIME_FLOAT' => 1791327771.1815
+    'REQUEST_TIME' => 1791327771
+]
+2026-10-07 01:02:58 [::1][-][-][error][yii\base\InvalidArgumentException] yii\base\InvalidArgumentException: The file or directory to be published does not exist: C:\xampp\htdocs\sidang-uaj-yii2\vendor\bower/jquery/dist in C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\web\AssetManager.php:485
+Stack trace:
+#0 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\web\AssetBundle.php(188): yii\web\AssetManager->publish('C:\\xampp\\htdocs...', Array)
+#1 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\web\AssetManager.php(303): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\web\AssetManager.php(274): yii\web\AssetManager->loadBundle('yii\\web\\JqueryA...', Array, true)
+#3 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\web\View.php(318): yii\web\AssetManager->getBundle('yii\\web\\JqueryA...')
+#4 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\web\View.php(323): yii\web\View->registerAssetBundle('yii\\web\\JqueryA...', NULL)
+#5 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\web\View.php(323): yii\web\View->registerAssetBundle('yii\\web\\YiiAsse...', NULL)
+#6 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\web\AssetBundle.php(130): yii\web\View->registerAssetBundle('yii\\validators\\...')
+#7 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\validators\RequiredValidator.php(94): yii\web\AssetBundle::register(Object(yii\web\View))
+#8 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\widgets\ActiveField.php(835): yii\validators\RequiredValidator->clientValidateAttribute(Object(app\models\Nilai), 'mahasiswa_id', Object(yii\web\View))
+#9 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\widgets\ActiveField.php(235): yii\widgets\ActiveField->getClientOptions()
+#10 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\widgets\ActiveField.php(225): yii\widgets\ActiveField->begin()
+#11 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\widgets\ActiveField.php(176): yii\widgets\ActiveField->render()
+#12 C:\xampp\htdocs\sidang-uaj-yii2\views\nilai\form.php(1): yii\widgets\ActiveField->__toString()
+#13 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\base\View.php(345): require('C:\\xampp\\htdocs...')
+#14 [internal function]: yii\base\View->yii\base\{closure}('C:\\xampp\\htdocs...', Array)
+#15 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\base\View.php(350): call_user_func_array(Object(Closure), Array)
+#16 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#17 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\NilaiController))
+#18 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\base\Controller.php(423): yii\base\View->render('form', Array, Object(app\controllers\NilaiController))
+#19 C:\xampp\htdocs\sidang-uaj-yii2\controllers\NilaiController.php(3): yii\base\Controller->render('form', Array)
+#20 [internal function]: app\controllers\NilaiController->actionCreate()
+#21 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\base\InlineAction.php(60): call_user_func_array(Array, Array)
+#22 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\base\Controller.php(182): yii\base\InlineAction->runWithParams(Array)
+#23 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\base\Module.php(547): yii\base\Controller->runAction('create', Array)
+#24 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\web\Application.php(105): yii\base\Module->runAction('nilai/create', Array)
+#25 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\base\Application.php(382): yii\web\Application->handleRequest(Object(yii\web\Request))
+#26 C:\xampp\htdocs\sidang-uaj-yii2\web\index.php(7): yii\base\Application->run()
+#27 {main}
+2026-10-07 01:02:58 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\sidang-uaj-yii2\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '62134'
+    'SERVER_SOFTWARE' => 'PHP 8.2.12 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/nilai/create'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\sidang-uaj-yii2\\web\\index.php'
+    'PATH_INFO' => '/nilai/create'
+    'PHP_SELF' => '/index.php/nilai/create'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"154\", \"Microsoft Edge\";v=\"154\", \"Not A(Brand\";v=\"99\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:8080/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'REQUEST_TIME_FLOAT' => 1791327778.7144
+    'REQUEST_TIME' => 1791327778
+]
+2026-10-07 01:45:58 [::1][-][-][error][ParseError] ParseError: syntax error, unexpected token "public", expecting end of file in C:\xampp\htdocs\sidang-uaj-yii2\controllers\SiteController.php:8
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('app\\controllers...')
+#1 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\base\Module.php(662): class_exists('app\\controllers...')
+#2 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\base\Module.php(618): yii\base\Module->createControllerByID('site')
+#3 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\base\Module.php(542): yii\base\Module->createController('index')
+#4 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\web\Application.php(105): yii\base\Module->runAction('', Array)
+#5 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\base\Application.php(382): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 C:\xampp\htdocs\sidang-uaj-yii2\web\index.php(7): yii\base\Application->run()
+#7 {main}
+2026-10-07 01:45:58 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '24ce50fd05c7d92fd44c26a93cd3837484dbb177bc54a8ad101c466cf66c84fca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"AzZpghZaZc2KgtdN6fs6rX5T-FKk-bi7\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\sidang-uaj-yii2\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '54564'
+    'SERVER_SOFTWARE' => 'PHP 8.2.12 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\sidang-uaj-yii2\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"154\", \"Microsoft Edge\";v=\"154\", \"Not A(Brand\";v=\"99\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0'
+    'HTTP_SEC_PURPOSE' => 'prefetch;prerender'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_csrf=24ce50fd05c7d92fd44c26a93cd3837484dbb177bc54a8ad101c466cf66c84fca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22AzZpghZaZc2KgtdN6fs6rX5T-FKk-bi7%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1791330358.2638
+    'REQUEST_TIME' => 1791330358
+]
+2026-10-07 01:45:59 [::1][-][-][error][ParseError] ParseError: syntax error, unexpected token "public", expecting end of file in C:\xampp\htdocs\sidang-uaj-yii2\controllers\SiteController.php:8
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('app\\controllers...')
+#1 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\base\Module.php(662): class_exists('app\\controllers...')
+#2 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\base\Module.php(618): yii\base\Module->createControllerByID('site')
+#3 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\base\Module.php(542): yii\base\Module->createController('index')
+#4 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\web\Application.php(105): yii\base\Module->runAction('', Array)
+#5 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\base\Application.php(382): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 C:\xampp\htdocs\sidang-uaj-yii2\web\index.php(7): yii\base\Application->run()
+#7 {main}
+2026-10-07 01:45:59 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '24ce50fd05c7d92fd44c26a93cd3837484dbb177bc54a8ad101c466cf66c84fca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"AzZpghZaZc2KgtdN6fs6rX5T-FKk-bi7\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\sidang-uaj-yii2\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '60947'
+    'SERVER_SOFTWARE' => 'PHP 8.2.12 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\sidang-uaj-yii2\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"154\", \"Microsoft Edge\";v=\"154\", \"Not A(Brand\";v=\"99\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_csrf=24ce50fd05c7d92fd44c26a93cd3837484dbb177bc54a8ad101c466cf66c84fca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22AzZpghZaZc2KgtdN6fs6rX5T-FKk-bi7%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1791330359.2643
+    'REQUEST_TIME' => 1791330359
+]
+2026-10-07 02:06:30 [::1][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it in C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\db\Connection.php:721
+Stack trace:
+#0 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\db\Connection.php(721): PDO->__construct('mysql:host=127....', 'root', Object(SensitiveParameterValue), NULL)
+#1 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\db\Connection.php(636): yii\db\Connection->createPdoInstance()
+#2 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\db\Connection.php(1066): yii\db\Connection->open()
+#3 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\db\Connection.php(1053): yii\db\Connection->getMasterPdo()
+#4 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\db\mysql\QueryBuilder.php(401): yii\db\Connection->getSlavePdo(true)
+#5 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\db\mysql\QueryBuilder.php(425): yii\db\mysql\QueryBuilder->supportsFractionalSeconds()
+#6 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\db\mysql\QueryBuilder.php(58): yii\db\mysql\QueryBuilder->defaultTimeTypeMap()
+#7 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\db\mysql\QueryBuilder->init()
+#8 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\db\QueryBuilder.php(118): yii\base\BaseObject->__construct(Array)
+#9 [internal function]: yii\db\QueryBuilder->__construct(Object(yii\db\Connection), Array)
+#10 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\di\Container.php(418): ReflectionClass->newInstanceArgs(Array)
+#11 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\di\Container.php(174): yii\di\Container->build('yii\\db\\mysql\\Qu...', Array, Array)
+#12 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\BaseYii.php(350): yii\di\Container->get('yii\\db\\mysql\\Qu...', Array)
+#13 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\db\mysql\Schema.php(265): yii\BaseYii::createObject('yii\\db\\mysql\\Qu...', Array)
+#14 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\db\Schema.php(248): yii\db\mysql\Schema->createQueryBuilder()
+#15 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\db\Connection.php(883): yii\db\Schema->getQueryBuilder()
+#16 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\db\ActiveQuery.php(337): yii\db\Connection->getQueryBuilder()
+#17 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\db\Query.php(249): yii\db\ActiveQuery->createCommand(Object(yii\db\Connection))
+#18 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\db\ActiveQuery.php(142): yii\db\Query->all(NULL)
+#19 C:\xampp\htdocs\sidang-uaj-yii2\controllers\SiteController.php(22): yii\db\ActiveQuery->all()
+#20 [internal function]: app\controllers\SiteController->actionIndex()
+#21 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\base\InlineAction.php(60): call_user_func_array(Array, Array)
+#22 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\base\Controller.php(182): yii\base\InlineAction->runWithParams(Array)
+#23 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\base\Module.php(547): yii\base\Controller->runAction('index', Array)
+#24 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\web\Application.php(105): yii\base\Module->runAction('', Array)
+#25 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\base\Application.php(382): yii\web\Application->handleRequest(Object(yii\web\Request))
+#26 C:\xampp\htdocs\sidang-uaj-yii2\web\index.php(7): yii\base\Application->run()
+#27 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it in C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\db\Connection.php:647
+Stack trace:
+#0 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\db\Connection.php(1066): yii\db\Connection->open()
+#1 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\db\Connection.php(1053): yii\db\Connection->getMasterPdo()
+#2 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\db\mysql\QueryBuilder.php(401): yii\db\Connection->getSlavePdo(true)
+#3 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\db\mysql\QueryBuilder.php(425): yii\db\mysql\QueryBuilder->supportsFractionalSeconds()
+#4 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\db\mysql\QueryBuilder.php(58): yii\db\mysql\QueryBuilder->defaultTimeTypeMap()
+#5 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\db\mysql\QueryBuilder->init()
+#6 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\db\QueryBuilder.php(118): yii\base\BaseObject->__construct(Array)
+#7 [internal function]: yii\db\QueryBuilder->__construct(Object(yii\db\Connection), Array)
+#8 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\di\Container.php(418): ReflectionClass->newInstanceArgs(Array)
+#9 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\di\Container.php(174): yii\di\Container->build('yii\\db\\mysql\\Qu...', Array, Array)
+#10 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\BaseYii.php(350): yii\di\Container->get('yii\\db\\mysql\\Qu...', Array)
+#11 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\db\mysql\Schema.php(265): yii\BaseYii::createObject('yii\\db\\mysql\\Qu...', Array)
+#12 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\db\Schema.php(248): yii\db\mysql\Schema->createQueryBuilder()
+#13 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\db\Connection.php(883): yii\db\Schema->getQueryBuilder()
+#14 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\db\ActiveQuery.php(337): yii\db\Connection->getQueryBuilder()
+#15 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\db\Query.php(249): yii\db\ActiveQuery->createCommand(Object(yii\db\Connection))
+#16 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\db\ActiveQuery.php(142): yii\db\Query->all(NULL)
+#17 C:\xampp\htdocs\sidang-uaj-yii2\controllers\SiteController.php(22): yii\db\ActiveQuery->all()
+#18 [internal function]: app\controllers\SiteController->actionIndex()
+#19 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\base\InlineAction.php(60): call_user_func_array(Array, Array)
+#20 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\base\Controller.php(182): yii\base\InlineAction->runWithParams(Array)
+#21 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\base\Module.php(547): yii\base\Controller->runAction('index', Array)
+#22 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\web\Application.php(105): yii\base\Module->runAction('', Array)
+#23 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\base\Application.php(382): yii\web\Application->handleRequest(Object(yii\web\Request))
+#24 C:\xampp\htdocs\sidang-uaj-yii2\web\index.php(7): yii\base\Application->run()
+#25 {main}
+Additional Information:
+Array
+(
+    [0] => HY000
+    [1] => 2002
+    [2] => No connection could be made because the target machine actively refused it
+)
+
+2026-10-07 02:06:28 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '24ce50fd05c7d92fd44c26a93cd3837484dbb177bc54a8ad101c466cf66c84fca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"AzZpghZaZc2KgtdN6fs6rX5T-FKk-bi7\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\sidang-uaj-yii2\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '58908'
+    'SERVER_SOFTWARE' => 'PHP 8.2.12 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\sidang-uaj-yii2\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"154\", \"Microsoft Edge\";v=\"154\", \"Not A(Brand\";v=\"99\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0'
+    'HTTP_SEC_PURPOSE' => 'prefetch;prerender'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_csrf=24ce50fd05c7d92fd44c26a93cd3837484dbb177bc54a8ad101c466cf66c84fca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22AzZpghZaZc2KgtdN6fs6rX5T-FKk-bi7%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1791331588.3974
+    'REQUEST_TIME' => 1791331588
+]
+2026-10-07 02:06:32 [::1][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it in C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\db\Connection.php:721
+Stack trace:
+#0 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\db\Connection.php(721): PDO->__construct('mysql:host=127....', 'root', Object(SensitiveParameterValue), NULL)
+#1 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\db\Connection.php(636): yii\db\Connection->createPdoInstance()
+#2 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\db\Connection.php(1066): yii\db\Connection->open()
+#3 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\db\Connection.php(1053): yii\db\Connection->getMasterPdo()
+#4 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\db\mysql\QueryBuilder.php(401): yii\db\Connection->getSlavePdo(true)
+#5 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\db\mysql\QueryBuilder.php(425): yii\db\mysql\QueryBuilder->supportsFractionalSeconds()
+#6 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\db\mysql\QueryBuilder.php(58): yii\db\mysql\QueryBuilder->defaultTimeTypeMap()
+#7 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\db\mysql\QueryBuilder->init()
+#8 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\db\QueryBuilder.php(118): yii\base\BaseObject->__construct(Array)
+#9 [internal function]: yii\db\QueryBuilder->__construct(Object(yii\db\Connection), Array)
+#10 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\di\Container.php(418): ReflectionClass->newInstanceArgs(Array)
+#11 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\di\Container.php(174): yii\di\Container->build('yii\\db\\mysql\\Qu...', Array, Array)
+#12 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\BaseYii.php(350): yii\di\Container->get('yii\\db\\mysql\\Qu...', Array)
+#13 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\db\mysql\Schema.php(265): yii\BaseYii::createObject('yii\\db\\mysql\\Qu...', Array)
+#14 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\db\Schema.php(248): yii\db\mysql\Schema->createQueryBuilder()
+#15 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\db\Connection.php(883): yii\db\Schema->getQueryBuilder()
+#16 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\db\ActiveQuery.php(337): yii\db\Connection->getQueryBuilder()
+#17 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\db\Query.php(249): yii\db\ActiveQuery->createCommand(Object(yii\db\Connection))
+#18 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\db\ActiveQuery.php(142): yii\db\Query->all(NULL)
+#19 C:\xampp\htdocs\sidang-uaj-yii2\controllers\SiteController.php(22): yii\db\ActiveQuery->all()
+#20 [internal function]: app\controllers\SiteController->actionIndex()
+#21 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\base\InlineAction.php(60): call_user_func_array(Array, Array)
+#22 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\base\Controller.php(182): yii\base\InlineAction->runWithParams(Array)
+#23 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\base\Module.php(547): yii\base\Controller->runAction('index', Array)
+#24 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\web\Application.php(105): yii\base\Module->runAction('', Array)
+#25 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\base\Application.php(382): yii\web\Application->handleRequest(Object(yii\web\Request))
+#26 C:\xampp\htdocs\sidang-uaj-yii2\web\index.php(7): yii\base\Application->run()
+#27 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it in C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\db\Connection.php:647
+Stack trace:
+#0 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\db\Connection.php(1066): yii\db\Connection->open()
+#1 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\db\Connection.php(1053): yii\db\Connection->getMasterPdo()
+#2 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\db\mysql\QueryBuilder.php(401): yii\db\Connection->getSlavePdo(true)
+#3 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\db\mysql\QueryBuilder.php(425): yii\db\mysql\QueryBuilder->supportsFractionalSeconds()
+#4 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\db\mysql\QueryBuilder.php(58): yii\db\mysql\QueryBuilder->defaultTimeTypeMap()
+#5 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\db\mysql\QueryBuilder->init()
+#6 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\db\QueryBuilder.php(118): yii\base\BaseObject->__construct(Array)
+#7 [internal function]: yii\db\QueryBuilder->__construct(Object(yii\db\Connection), Array)
+#8 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\di\Container.php(418): ReflectionClass->newInstanceArgs(Array)
+#9 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\di\Container.php(174): yii\di\Container->build('yii\\db\\mysql\\Qu...', Array, Array)
+#10 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\BaseYii.php(350): yii\di\Container->get('yii\\db\\mysql\\Qu...', Array)
+#11 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\db\mysql\Schema.php(265): yii\BaseYii::createObject('yii\\db\\mysql\\Qu...', Array)
+#12 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\db\Schema.php(248): yii\db\mysql\Schema->createQueryBuilder()
+#13 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\db\Connection.php(883): yii\db\Schema->getQueryBuilder()
+#14 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\db\ActiveQuery.php(337): yii\db\Connection->getQueryBuilder()
+#15 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\db\Query.php(249): yii\db\ActiveQuery->createCommand(Object(yii\db\Connection))
+#16 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\db\ActiveQuery.php(142): yii\db\Query->all(NULL)
+#17 C:\xampp\htdocs\sidang-uaj-yii2\controllers\SiteController.php(22): yii\db\ActiveQuery->all()
+#18 [internal function]: app\controllers\SiteController->actionIndex()
+#19 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\base\InlineAction.php(60): call_user_func_array(Array, Array)
+#20 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\base\Controller.php(182): yii\base\InlineAction->runWithParams(Array)
+#21 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\base\Module.php(547): yii\base\Controller->runAction('index', Array)
+#22 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\web\Application.php(105): yii\base\Module->runAction('', Array)
+#23 C:\xampp\htdocs\sidang-uaj-yii2\vendor\yiisoft\yii2\base\Application.php(382): yii\web\Application->handleRequest(Object(yii\web\Request))
+#24 C:\xampp\htdocs\sidang-uaj-yii2\web\index.php(7): yii\base\Application->run()
+#25 {main}
+Additional Information:
+Array
+(
+    [0] => HY000
+    [1] => 2002
+    [2] => No connection could be made because the target machine actively refused it
+)
+
+2026-10-07 02:06:30 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '24ce50fd05c7d92fd44c26a93cd3837484dbb177bc54a8ad101c466cf66c84fca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"AzZpghZaZc2KgtdN6fs6rX5T-FKk-bi7\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\sidang-uaj-yii2\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '62547'
+    'SERVER_SOFTWARE' => 'PHP 8.2.12 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\sidang-uaj-yii2\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"154\", \"Microsoft Edge\";v=\"154\", \"Not A(Brand\";v=\"99\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_csrf=24ce50fd05c7d92fd44c26a93cd3837484dbb177bc54a8ad101c466cf66c84fca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22AzZpghZaZc2KgtdN6fs6rX5T-FKk-bi7%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1791331590.5157
+    'REQUEST_TIME' => 1791331590
+]
+2026-10-07 02:07:37 [::1][-][-][error][yii\base\ErrorException:64] yii\base\ErrorException: Cannot use yii\helpers\Html as Html because the name is already in use in C:\xampp\htdocs\sidang-uaj-yii2\views\site\index.php:22
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2026-10-07 02:07:37 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '24ce50fd05c7d92fd44c26a93cd3837484dbb177bc54a8ad101c466cf66c84fca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"AzZpghZaZc2KgtdN6fs6rX5T-FKk-bi7\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\sidang-uaj-yii2\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '64481'
+    'SERVER_SOFTWARE' => 'PHP 8.2.12 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\sidang-uaj-yii2\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"154\", \"Microsoft Edge\";v=\"154\", \"Not A(Brand\";v=\"99\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_csrf=24ce50fd05c7d92fd44c26a93cd3837484dbb177bc54a8ad101c466cf66c84fca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22AzZpghZaZc2KgtdN6fs6rX5T-FKk-bi7%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1791331657.5844
+    'REQUEST_TIME' => 1791331657
+]
+2026-10-07 02:07:39 [::1][-][-][error][yii\base\ErrorException:64] yii\base\ErrorException: Cannot use yii\helpers\Html as Html because the name is already in use in C:\xampp\htdocs\sidang-uaj-yii2\views\site\index.php:22
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2026-10-07 02:07:39 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '24ce50fd05c7d92fd44c26a93cd3837484dbb177bc54a8ad101c466cf66c84fca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"AzZpghZaZc2KgtdN6fs6rX5T-FKk-bi7\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\sidang-uaj-yii2\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '60776'
+    'SERVER_SOFTWARE' => 'PHP 8.2.12 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\sidang-uaj-yii2\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"154\", \"Microsoft Edge\";v=\"154\", \"Not A(Brand\";v=\"99\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_csrf=24ce50fd05c7d92fd44c26a93cd3837484dbb177bc54a8ad101c466cf66c84fca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22AzZpghZaZc2KgtdN6fs6rX5T-FKk-bi7%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1791331659.3332
+    'REQUEST_TIME' => 1791331659
+]
+2026-10-07 02:12:29 [::1][-][-][error][yii\base\ErrorException:64] yii\base\ErrorException: Cannot use yii\helpers\Url as Url because the name is already in use in C:\xampp\htdocs\sidang-uaj-yii2\views\site\index.php:21
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2026-10-07 02:12:29 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '24ce50fd05c7d92fd44c26a93cd3837484dbb177bc54a8ad101c466cf66c84fca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"AzZpghZaZc2KgtdN6fs6rX5T-FKk-bi7\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\sidang-uaj-yii2\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '63807'
+    'SERVER_SOFTWARE' => 'PHP 8.2.12 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\sidang-uaj-yii2\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"154\", \"Microsoft Edge\";v=\"154\", \"Not A(Brand\";v=\"99\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'cross-site'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_csrf=24ce50fd05c7d92fd44c26a93cd3837484dbb177bc54a8ad101c466cf66c84fca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22AzZpghZaZc2KgtdN6fs6rX5T-FKk-bi7%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1791331949.3649
+    'REQUEST_TIME' => 1791331949
+]
+2026-10-07 02:12:31 [::1][-][-][error][yii\base\ErrorException:64] yii\base\ErrorException: Cannot use yii\helpers\Url as Url because the name is already in use in C:\xampp\htdocs\sidang-uaj-yii2\views\site\index.php:21
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2026-10-07 02:12:31 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\sidang-uaj-yii2\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '54793'
+    'SERVER_SOFTWARE' => 'PHP 8.2.12 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\sidang-uaj-yii2\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"154\", \"Google Chrome\";v=\"154\", \"Not A(Brand\";v=\"99\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'en,en-US;q=0.9,id;q=0.8'
+    'REQUEST_TIME_FLOAT' => 1791331951.4407
+    'REQUEST_TIME' => 1791331951
+]
+2026-10-07 02:12:35 [::1][-][-][error][yii\base\ErrorException:64] yii\base\ErrorException: Cannot use yii\helpers\Url as Url because the name is already in use in C:\xampp\htdocs\sidang-uaj-yii2\views\site\index.php:21
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2026-10-07 02:12:35 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\sidang-uaj-yii2\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '56590'
+    'SERVER_SOFTWARE' => 'PHP 8.2.12 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\sidang-uaj-yii2\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"154\", \"Google Chrome\";v=\"154\", \"Not A(Brand\";v=\"99\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'en,en-US;q=0.9,id;q=0.8'
+    'REQUEST_TIME_FLOAT' => 1791331955.3848
+    'REQUEST_TIME' => 1791331955
+]

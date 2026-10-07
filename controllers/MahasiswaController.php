@@ -1,0 +1,2 @@
+<?php namespace app\controllers; use yii\web\Controller; use yii\web\NotFoundHttpException; use app\models\Mahasiswa;
+class MahasiswaController extends Controller { public function actionCreate(){ $m=new Mahasiswa(); if($m->load($_POST) && $m->save()){return $this->redirect(['site/index']);} return $this->render('form',['model'=>$m]); } public function actionDelete($id){$m=Mahasiswa::findOne($id); if($m)$m->delete(); return $this->redirect(['site/index']);} }

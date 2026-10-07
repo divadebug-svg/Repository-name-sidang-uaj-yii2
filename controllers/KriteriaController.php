@@ -1,0 +1,2 @@
+<?php namespace app\controllers; use yii\web\Controller; use app\models\Kriteria;
+class KriteriaController extends Controller { public function actionCreate(){ $m=new Kriteria(); if($m->load($_POST)){ $total=(int)Kriteria::find()->sum('bobot')+(int)$m->bobot; if($total<=100 && $m->save()) return $this->redirect(['site/index']); $m->addError('bobot','Total bobot tidak boleh melebihi 100%.'); } return $this->render('form',['model'=>$m]); } public function actionDelete($id){if($m=Kriteria::findOne($id))$m->delete(); return $this->redirect(['site/index']);} }

@@ -1,0 +1,2 @@
+<?php namespace app\controllers; use yii\web\Controller; use app\models\Dosen;
+class DosenController extends Controller { public function actionCreate(){ $m=new Dosen(); if($m->load($_POST)&&$m->save())return $this->redirect(['site/index']); return $this->render('form',['model'=>$m]); } public function actionDelete($id){if($m=Dosen::findOne($id))$m->delete(); return $this->redirect(['site/index']);} }

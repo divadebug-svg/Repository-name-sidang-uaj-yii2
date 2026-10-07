@@ -1,0 +1,1 @@
+<?php return ['id'=>'sidang-uaj-console','basePath'=>dirname(__DIR__),'controllerNamespace'=>'app\commands','components'=>['db'=>require __DIR__.'/db.php','log'=>['targets'=>[['class'=>'yii\log\FileTarget','levels'=>['error','warning']]]]]];

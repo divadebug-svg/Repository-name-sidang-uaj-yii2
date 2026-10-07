@@ -1,0 +1,25 @@
+{
+  "name": "uaj/sidang-penilaian-yii2",
+  "description": "Sistem Penilaian Sidang Skripsi Universitas Al Hikmah Jepara berbasis Yii Framework 2",
+  "type": "project",
+  "license": "proprietary",
+  "require": {
+    "php": ">=8.2",
+    "yiisoft/yii2": "~2.0.54"
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://asset-packagist.org"
+    }
+  ],
+  "config": {
+    "allow-plugins": {
+      "yiisoft/yii2-composer": true
+    },
+    "process-timeout": 1800,
+    "sort-packages": true
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
+}
